@@ -2,14 +2,14 @@ var c:Int?=0
 repeat{
   print("1. Number Right Triangle")
   print("2. Sequential Number Right Triangle")
-  print("3.  Pascal Triangle")
+  print("3. Pascal Triangle")
   print("4. Exit")
-  print("Enter your Choice:")
+  print("Enter your Choice: ",terminator:" ")
   if let ch=Int(readLine()!){
     c=ch
     switch ch {
       case 1:
-        print("Enter No of Rows")
+        print("Enter No of Rows: ",terminator:" ")
         if let n=Int(readLine()!){
           print()
           for i in 1...n{
@@ -21,7 +21,7 @@ repeat{
         }
         print()
     case 2:
-      print("Enter No of Rows: ")
+      print("Enter No of Rows: ",terminator:" ")
       if let n=Int(readLine()!){
         print()
         var k=1
@@ -36,7 +36,7 @@ repeat{
       print()
       break
     case 3:
-      print("Enter No of Rows: ")
+      print("Enter No of Rows: ",terminator:" ")
       if let n=Int(readLine()!){
         print()
         for i in 0...n-1{
